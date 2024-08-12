@@ -32,10 +32,38 @@ let myOIbj = {
 }
 
 const myFunction = function(){
-    console.log("Hello world");
+    // console.log("Hello world");
 }
 
-    console.log(typeof anotherId);
+    // console.log(typeof anotherId);
+
+
+
+// +++++++++++++++++++ MEMORY ++++++++++++++++++++++++++++++++++++++++++
+
+// Stack Memory (used in Primitibe type & get copy of variable) , Heap Memory (used in Non-Primitive & get a refrence of variable/original value)
+// Ex - 
+
+let myYoutubename = "Rahila"
+
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne 
+
+userTwo.email = "rahila@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
 
 
 
